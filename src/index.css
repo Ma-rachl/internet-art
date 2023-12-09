@@ -1,99 +1,104 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 
-.slide-1{
-  background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
-}
-.slide-1 h1{
-  font-size: 70px;
+.slide-1 {
+    background-image: linear-gradient(58.2deg, rgba(40, 91, 212, 0.73) -3%, rgba(171, 53, 163, 0.45) 49.3%, rgba(255, 204, 112, 0.37) 97.7%);
 }
 
-.slide-1 span{
-  font-size: 30px;
+.slide-1 h1 {
+    font-size: 70px;
 }
 
-.slide-2{
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-}
-.slide-2 span{
-  font-size: 40px;
-  display: block;
-  padding: 50px;
-  margin-bottom: 10px;
+.slide-1 span {
+    font-size: 30px;
 }
 
-.slide-3{
-  background-color: #85FFBD;
-  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-
-}
-.slide-3 span{
-  font-size: 50px;
-  display: block;
-  padding: 50px;
-  margin-bottom: 10px;
+.slide-2 {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
-
-.slide-4{
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
-}
-.slide-4 h1{
-  font-size: 65px;
+.slide-2 span {
+    font-size: 40px;
+    display: block;
+    padding: 50px;
+    margin-bottom: 10px;
 }
 
-
-.slide-4 p{
-  font-size: 30px;
-  display: block;
-  padding: 50px;
-  margin-bottom: 10px;
-}
-
-
-
-.slide-5{
-  background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+.slide-3 {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
 }
 
-.slide-5 span{
-  font-size: 50px;
-  display: block;
-  padding: 50px;
-  margin-bottom: 10px;
+.slide-3 span {
+    font-size: 50px;
+    display: block;
+    padding: 50px;
+    margin-bottom: 10px;
 }
 
-.slide-6{
-  background-image: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );
+
+.slide-4 {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
 }
 
-.slide-6 span{
-  font-size: 30px;
-  display: block;
-  padding: 50px;
-  margin-bottom: 10px;
+.slide-4 h1 {
+    font-size: 65px;
 }
-.slide-7{
-  background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+
+
+.slide-4 p {
+    font-size: 30px;
+    display: block;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+
+.slide-5 {
+    background-image: linear-gradient(135deg, #F761A1 10%, #8C1BAB 100%);
 
 }
-.slide-8{
-  background-image: linear-gradient( 109.6deg,  rgba(152,126,179,1) 43.4%, rgba(236,119,36,1) 91.1% );
+
+.slide-5 span {
+    font-size: 50px;
+    display: block;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.slide-6 {
+    background-image: linear-gradient(111.4deg, rgba(238, 113, 113, 1) 1%, rgba(246, 215, 148, 1) 58%);
+
+}
+
+.slide-6 span {
+    font-size: 30px;
+    display: block;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.slide-7 {
+    background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgba(247, 234, 163, 1) 0%, rgba(236, 180, 238, 0.56) 46.4%, rgba(163, 203, 247, 1) 100.7%);
+
+}
+
+.slide-8 {
+    background-image: linear-gradient(109.6deg, rgba(152, 126, 179, 1) 43.4%, rgba(236, 119, 36, 1) 91.1%);
 
 }
