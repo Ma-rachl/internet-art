@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Navigate, Route, Routes} from "react-router";
+import {HashRouter} from "react-router-dom";
+import FullPageComponent from "./FullPageComponent";
+import Signin from "./users/Signin";
+import {useState} from "react";
 
 function App() {
+    const [credentials, setCredentials] = useState({ username: "", password: "" });
+
+    const handleSignin = (newCredentials) => {
+        setCredentials(newCredentials);
+    };
+    const getCredentials = () => {
+        return credentials;
+    };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+
+      <div>
+        <Routes>
+          <Route path="/" element={<Navigate to="/Signin" />} />
+          <Route path="/signin" element={<Signin onSignin={handleSignin} />} />
+          {/*<Route path="/signup" element={<Signup />} />*/}
+          <Route path="/main" element={<FullPageComponent getCredentials={getCredentials}/>} />
+
+        </Routes>
+      </div>
+
+      </HashRouter>
+
   );
 }
 
