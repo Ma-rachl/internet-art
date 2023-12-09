@@ -20,6 +20,7 @@ function FullPageComponent({getCredentials}) {
         // Initialize fullPage.js when the component mounts
         if (fullpageRef.current) {
             new fullpage(fullpageRef.current, {
+                 anchors: ['firstPage', 'secondPage', 'thirdPage'],
                 // Add your fullpage.js configurations here
                 // For example:
                 // sectionsColor: ['#f1c40f', '#e74c3c', '#3498db', '#2ecc71'],
@@ -30,7 +31,7 @@ function FullPageComponent({getCredentials}) {
     return (
         <div ref={fullpageRef}>
             {/* Content for each fullPage.js section */}
-            <div className="section slide-1">
+            <div className="section slide-1" data-anchor="page-1">
 
                 <div className="text-center">
                     <h1>Welcome   [ {credentials.username} ]</h1>
@@ -38,12 +39,13 @@ function FullPageComponent({getCredentials}) {
                         <span >Are you ready? It's time to unlock your 2023 recap</span>
 
                     </div>
-                    <button className="btn btn-outline-dark mt-4 btn-lg">Lets go</button>
+                    <a href="#secondPage"><button className="btn btn-outline-dark mt-4 btn-lg">Lets go</button></a>
+
                 </div>
 
 
             </div>
-            <div className="section slide-2">
+            <div className="section slide-2" data-anchor="page-2">
 
                 <div className="slide" data-anchor="slide1">
                     <div className="text-center">
@@ -71,13 +73,13 @@ function FullPageComponent({getCredentials}) {
 
 
             </div>
-            <div className="section slide-3">
+            <div className="section slide-3" data-anchor="page-3">
                 <div>
                     <span >In 2023 you were quite the detective 🔎</span>
 
                 </div>
             </div>
-            <div className="section slide-4">
+            <div className="section slide-4" data-anchor="page-4">
                 <div className="text-center">
                     <h1>You browsed {stalked} profiles</h1>
 
